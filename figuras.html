@@ -7,9 +7,74 @@
     <title>Figuras Geométricas | Curso práctico de JavaScript</title>
 </head>
 <body>
-    <h1>
-        Figura Geométricas
-    </h1>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+        <p>Este es el primer taller del curso practico de JavaScript</p>
+    </header>
+
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el diámetro, perímetro y área de un círculo</h2>
+        <form action="">
+            <label for="InputCirculo">
+                Escribe cuánto mide el radio del círculo:
+            </label>
+            <input id="InputCirculo" type="number">
+            <button type="button" onclick="calcularDiametroCirculo()">
+                Calcular el diámetro
+            </button>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perímetro de un triángulo</h2>
+        <form action="">
+            <label for="InputLado1">
+                Escribe la medida del lado 1:
+            </label>
+            <input id="InputLado1" type="number">
+            <label for="InputLado2">
+                Escribe la medida del lado 2:
+            </label>
+            <input id="InputLado2" type="number">
+            <label for="InputBase">
+                Escribe la medida de la base:
+            </label>
+            <input id="InputBase" type="number">
+            <label for="InputAltura">
+                Escribe la medida de la altura:
+            </label>
+            <input id="InputAltura" type="number">
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    
 
     <script src="./figuras.js"></script>
 </body>
